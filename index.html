@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Nav menu  -->
+      <ul class="nav-menu-container">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Contact</li>
+        <li class="nav-item">About Us</li>
+        <li class="nav-btn">
+          <i class="fas fa-bars menu-btn"></i>
+        </li>
+      </ul>
+    </header>
+    <!-- Responsive nav menu  -->
+    <ul class="menu-resposnive">
+        <li class="nav-item">Home</li>
+        <li class="nav-item">Contact</li>
+        <li class="nav-item">About Us</li>
+    </ul>
+    <script>
+      // Add to the button class .show 
+       const navBtn = document.querySelector(".nav-btn")
+      const  menuResponsive = document.querySelector(".menu-resposnive")
+      navBtn.addEventListener("click" , ()=>  menuResponsive.classList.toggle("show"))
+    </script>
+  </body>
+</html>
